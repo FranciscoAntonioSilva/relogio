@@ -13,4 +13,3 @@ const clockTime = () => {
 }
 
 setInterval(clockTime, 1000);
-//A função setInterval(), serve para executar uma função repetidamente a cada intervalo de tempo específico.
