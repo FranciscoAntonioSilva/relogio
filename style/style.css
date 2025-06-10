@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+}
+
+/*Mudar a fonte quando a energia voltar*/
+
+.wrapperContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: url(../image/paisagem.jpg) 
+    center center
+    no-repeat
+    fixed;
+    background-size: cover;
+    padding: 3rem;
+}
+
+.clockContainer {
+    background-color: #fafafa54;
+    width: 70%;
+    max-width: 1000px;
+    border-radius: 8px;
+    padding: 2rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.clock-time {
+    width: 15rem;
+    background-color: #fafafa6b;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.clock-time__elements {
+    font-size: 6rem;
+    border-bottom: 1px solid;
+}
+
+.clock-time__text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+    .wrapperContainer {
+        padding: 1.5rem;
+    }
+
+    .clockContainer {
+        width: 100%;
+    }
+
+    .clock-time {
+        width: 10rem;
+        padding: 0.5rem;
+    }
+
+    .clock-time__text {
+        font-size: 1.2rem;
+    }
+}
