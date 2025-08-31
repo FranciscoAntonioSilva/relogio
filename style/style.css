@@ -12,7 +12,7 @@ body {
 /*Mudar a fonte quando a energia voltar*/
 
 .wrapperContainer {
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     display: flex;
     flex-direction: column;
